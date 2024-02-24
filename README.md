@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Test if a value is a number having a non-infinite positive value.
+> Test if a value is a number having a finite positive value.
 
 <section class="installation">
 
@@ -65,7 +65,7 @@ var isPositiveFinite = require( '@stdlib/assert-is-positive-finite' );
 
 #### isPositiveFinite( value )
 
-Tests if a `value` is a `number` having a non-infinite positive value.
+Tests if a value is a number having a finite positive value.
 
 <!-- eslint-disable no-new-wrappers -->
 
@@ -78,13 +78,13 @@ var bool = isPositiveFinite( 5.0 );
 bool = isPositiveFinite( new Number( 5.0 ) );
 // returns true
 
-bool = isPositiveFinite( 5.0/0.0 );
+bool = isPositiveFinite( 1.0/0.0 );
 // returns false
 
 bool = isPositiveFinite( -5.0 );
 // returns false
 
-bool = isPositiveFinite( new Number( 5.0/0.0 ) );
+bool = isPositiveFinite( new Number( 1.0/0.0 ) );
 // returns false
 
 bool = isPositiveFinite( null );
@@ -93,7 +93,7 @@ bool = isPositiveFinite( null );
 
 #### isPositiveFinite.isPrimitive( value )
 
-Tests if a `value` is a primitive `number` having a non-infinite positive value.
+Tests if a value is a primitive number having a finite positive value.
 
 <!-- eslint-disable no-new-wrappers -->
 
@@ -112,7 +112,7 @@ bool = isPositiveFinite.isPrimitive( new Number( 3.0 ) );
 
 #### isPositiveFinite.isObject( value )
 
-Tests if a `value` is a `Number` object having a non-infinite positive value.
+Tests if a value is a `Number` object having a finite positive value.
 
 <!-- eslint-disable no-new-wrappers -->
 
@@ -125,7 +125,7 @@ var bool = isPositiveFinite.isObject( new Number( 3.0 ) );
 bool = isPositiveFinite.isObject( 3.0 );
 // returns false
 
-bool = isPositiveFinite.isObject( new Number( 3.0/0.0 ) );
+bool = isPositiveFinite.isObject( new Number( 1.0/0.0 ) );
 // returns false
 ```
 
@@ -160,7 +160,7 @@ bool = isPositiveFinite( 0.0 );
 bool = isPositiveFinite( 1.0/0.0 );
 // returns false
 
-bool = isPositiveFinite( new Number( 5.0/0.0 ) );
+bool = isPositiveFinite( new Number( 1.0/0.0 ) );
 // returns false
 
 bool = isPositiveFinite( -5.0 );
@@ -180,12 +180,6 @@ bool = isPositiveFinite( null );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
-
-* * *
-
-## See Also
-
--   <span class="package-name">[`@stdlib/assert-is-number`][@stdlib/assert/is-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number.</span>
 
 </section>
 
@@ -262,12 +256,6 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/assert-is-positive-finite/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-positive-finite/main/LICENSE
-
-<!-- <related-links> -->
-
-[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number
-
-<!-- </related-links> -->
 
 </section>
 

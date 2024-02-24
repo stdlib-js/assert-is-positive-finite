@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/assert-is-positive-finite",
   "version": "0.0.0",
-  "description": "Test if a value is a number having a non-infinite positive value.",
+  "description": "Test if a value is a number having a finite positive value.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -37,8 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-infinite": "^0.2.1",
     "@stdlib/assert-is-number": "^0.2.1",
+    "@stdlib/constants-float64-pinf": "^0.2.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1"
   },
   "devDependencies": {
@@ -79,6 +79,8 @@
     "is",
     "isnumber",
     "isnumeric",
+    "finite",
+    "isfinite",
     "type",
     "check",
     "primitive",
