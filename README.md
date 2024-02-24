@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@esm/index.mjs';
+import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@esm/index.mjs';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@v0.1.0-esm/index.mjs';
 ```
 
 #### isPositiveFinite( value )
@@ -136,7 +136,7 @@ bool = isPositiveFinite.isObject( new Number( 1.0/0.0 ) );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@esm/index.mjs';
+import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@v0.1.0-esm/index.mjs';
 
 var bool = isPositiveFinite( 5.0 );
 // returns true
