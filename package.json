@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-positive-finite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test if a value is a number having a finite positive value.",
   "license": "Apache-2.0",
   "author": {
