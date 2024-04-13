@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@deno/mod.js';
+import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@deno/mod.js';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@v0.2.0-deno/mod.js';
 ```
 
 #### isPositiveFinite( value )
@@ -131,7 +131,7 @@ bool = isPositiveFinite.isObject( new Number( 1.0/0.0 ) );
 
 ```javascript
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@deno/mod.js';
+import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@v0.2.0-deno/mod.js';
 
 var bool = isPositiveFinite( 5.0 );
 // returns true
