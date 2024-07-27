@@ -2,9 +2,39 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.2.1">
 
-## Unreleased (2024-07-01)
+## 0.2.1 (2024-07-27)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-04-13)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2024-02-24)
+
+<section class="features">
+
+### Features
+
+-   [`a4e21fb`](https://github.com/stdlib-js/stdlib/commit/a4e21fbfa3d03a1213c0cf4ec3e7305cd2a0c215) - add `assert/is-positive-finite` [(#1358)](https://github.com/stdlib-js/stdlib/pull/1358)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,7 +42,8 @@
 
 <details>
 
--   [`a591e05`](https://github.com/stdlib-js/stdlib/commit/a591e052cf1b1515c267781b914c6a482e150425) - **test:** fix test configuration _(by Athan Reines)_
+-   [`2f1f30e`](https://github.com/stdlib-js/stdlib/commit/2f1f30e14ba74c4e767eadd5650a84e3c3901b6c) - **refactor:** avoid duplicate assertion logic and fix documentation errors _(by Athan Reines)_
+-   [`a4e21fb`](https://github.com/stdlib-js/stdlib/commit/a4e21fbfa3d03a1213c0cf4ec3e7305cd2a0c215) - **feat:** add `assert/is-positive-finite` [(#1358)](https://github.com/stdlib-js/stdlib/pull/1358) _(by Aditya Sapra, Philipp Burckhardt)_
 
 </details>
 
@@ -24,9 +55,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Aditya Sapra
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
