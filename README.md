@@ -35,20 +35,32 @@ limitations under the License.
 
 > Test if a value is a number having a finite positive value.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-positive-finite
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@deno/mod.js';
+var isPositiveFinite = require( '@stdlib/assert-is-positive-finite' );
 ```
 
 #### isPositiveFinite( value )
@@ -58,7 +70,7 @@ Tests if a value is a number having a finite positive value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isPositiveFinite( 5.0 );
 // returns true
@@ -86,7 +98,7 @@ Tests if a value is a primitive number having a finite positive value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isPositiveFinite.isPrimitive( 3.0 );
 // returns true
@@ -105,7 +117,7 @@ Tests if a value is a `Number` object having a finite positive value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isPositiveFinite.isObject( new Number( 3.0 ) );
 // returns true
@@ -130,8 +142,8 @@ bool = isPositiveFinite.isObject( new Number( 1.0/0.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-finite@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
+var isPositiveFinite = require( '@stdlib/assert-is-positive-finite' );
 
 var bool = isPositiveFinite( 5.0 );
 // returns true
@@ -169,6 +181,13 @@ bool = isPositiveFinite( null );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-finite`][@stdlib/assert/is-finite]</span><span class="delimiter">: </span><span class="description">test if a value is a finite number.</span>
+-   <span class="package-name">[`@stdlib/assert-is-positive-number`][@stdlib/assert/is-positive-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number having a positive value.</span>
+
 </section>
 
 <!-- /.related -->
@@ -182,7 +201,7 @@ bool = isPositiveFinite( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -199,7 +218,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -225,8 +244,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -244,6 +263,14 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/assert-is-positive-finite/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-positive-finite/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-finite]: https://github.com/stdlib-js/assert-is-finite
+
+[@stdlib/assert/is-positive-number]: https://github.com/stdlib-js/assert-is-positive-number
+
+<!-- </related-links> -->
 
 </section>
 
